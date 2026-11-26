@@ -32,7 +32,7 @@ elastic_net_model.fit(X_scaled, y)
 
 coefficients = elastic_net_model.coef_
 
-#on regarde ce que le meilleru modèle a gardé
+#on regarde ce que le meilleru modèle a gardé.
 
 selected_indices = np.where(coefficients != 0)[0]
 print(f"Nombre de gènes/métabolites sélectionnés par le modèle : {len(selected_indices)}")
